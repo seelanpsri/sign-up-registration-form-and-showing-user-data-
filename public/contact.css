@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&family=Merienda:wght@700&family=Rowdies&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    background-image: url(R.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-header {
+    height: 70px;
+    width: 100%;
+}
+
+a:-webkit-any-link {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main-header-nav-item-list .main-header-nav-item a {
+    color: black;
+}
+
+.main-header-nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header-nav-title {
+    font-size: 24px;
+    font-family: Bangers;
+    color: brown;
+    margin-left: 100px;
+    letter-spacing: 1px;
+}
+
+.main-header-nav-item-list {
+    display: flex;
+    list-style: none;
+    width: 300px;
+    justify-content: space-between;
+    margin-right: 100px;
+    font-family: "Merienda", serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: aqua;
+}
+
+.main-main {
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-left {
+    width: 60%;
+    height: 80%;
+    padding: 150px;
+}
+
+.contact-text {
+    color: tomato;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+    text-decoration: wavy;
+}
+
+.slogan {
+    color: white;
+    letter-spacing: 1px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-top: 20px;
+    font-size: 30px;
+    animation: animate1 1s linear;
+}
+
+.contact-right {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    animation: animate1 1s linear;
+}
+
+.contact-right h2 {
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px black;
+    font-size: 20px;
+    animation: animate1 1s linear;
+}
+
+.contact-right a,
+p {
+    color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    animation: animate1 1s linear;
+}
+
+.bar-nav {
+    height: 130px;
+    width: 30px;
+    background-color: tomato;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 270px;
+    left: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    animation: animate1 1s linear;
+}
+
+.bar-nav a img {
+    height: 20px;
+    width: 20px;
+    display: block;
+    animation: animate1 1s linear;
+    filter: drop-shadow(3px 3px 10px black);
+}
+
+@keyframes animate1 {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Luckiest+Guy&family=Merienda:wght@700&family=Rowdies&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    background-image: url(R.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.main-header {
+    height: 70px;
+    width: 100%;
+}
+
+.main-header-nav {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header-nav-title {
+    font-size: 24px;
+    font-family: Bangers;
+    color: brown;
+    margin-left: 100px;
+    letter-spacing: 1px;
+}
+
+a:-webkit-any-link {
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+.main-header-nav-item-list {
+    display: flex;
+    list-style: none;
+    width: 300px;
+    justify-content: space-between;
+    margin-right: 100px;
+    font-family: "Merienda", serif;
+    font-weight: bolder;
+    font-size: 20px;
+    color: black;
+}
+
+.main-header-nav-item-list .main-header-nav-item a {
+    color: black;
+}
+
+.main-main {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.main-heading {
+    font-family: Rowdies;
+    font-size: 30px;
+    color: #163a41;
+    margin-bottom: 20px;
+    animation: animate 1s ease-out;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.main-content {
+    font-family: Rowdies;
+    font-size: 26px;
+    width: 60%;
+    color: rgb(28, 35, 36);
+    text-shadow: 0 0 10px white;
+    animation: animate 1s ease;
+}
+
+.main-sec-content {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    animation: animate 1s ease-out;
+}
+
+.main-signin-btn {
+    width: 200px;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    background-color: rgb(196, 11, 11);
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.decoration {
+    width: 204px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 50px;
+    overflow: hidden;
+    animation: animate 1s ease;
+}
+
+.decoration::after {
+    content: '';
+    position: absolute;
+    height: 44px;
+    width: 44px;
+    background-color: rgb(255, 255, 255, 0.5);
+    left: 0;
+    top: 0;
+    animation: button 2s linear infinite;
+}
+
+@keyframes button {
+    0% {}
+    50% {
+        transform: translateX(202px);
+    }
+}
+
+@keyframes animate {
+    0% {
+        transform: translatey(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translatey(0px);
+        opacity: 1;
+    }
+}
